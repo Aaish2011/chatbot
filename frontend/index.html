@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LIMUS.AI Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- SIDEBAR -->
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+      <div id="logo" class="logo">L<sub>M</sub></div>
+      <button id="closeSidebar" class="close-btn">×</button>
+    </div>
+
+    <div class="sidebar-actions">
+      <button id="newChat" class="sidebar-btn">🆕 <span class="btn-text">New Chat</span></button>
+      <div class="search-container">
+        <input type="text" id="searchChat" placeholder="🔍 Search chats...">
+      </div>
+    </div>
+
+    <div id="chatList" class="chat-list"></div>
+  </aside>
+
+  <!-- MAIN AREA -->
+  <main class="main">
+    <header class="main-header">
+      <div class="title">LIMUS.AI</div>
+      <div class="powered">Powered by GROQ ⚡</div>
+    </header>
+
+    <section id="chatMessages" class="chat-messages"></section>
+
+    <footer class="chat-footer">
+      <div class="footer-left">
+        <button id="modeToggle" class="toggle-btn">🌙</button>
+      </div>
+      <form id="chatForm" class="chat-form">
+        <input id="chatInput" type="text" placeholder="Ask me everything..." autocomplete="off">
+        <button type="submit" class="send-btn">➤</button>
+      </form>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
